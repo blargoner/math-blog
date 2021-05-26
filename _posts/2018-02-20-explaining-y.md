@@ -3,14 +3,14 @@ layout: post
 title:  "Explaining Y"
 date:   2018-02-20 17:06:00 -0500
 ---
-<div style="display:none">
-$$
-\newcommand{\Y}{\mathbf{Y}}
-\newcommand{\om}{\mathbf{\omega}}
-\newcommand{\Om}{\mathbf{\Omega}}
-\newcommand{\Th}{\mathbf{\Theta}}
-$$
-</div>
+<script>
+	window.MacroConfig = {
+		"\\Y": "\\mathbf{Y}",
+		"\\om": "\\mathbf{\\omega}",
+		"\\Om": "\\mathbf{\\Omega}",
+		"\\Th": "\\mathbf{\\Theta}"
+	};
+</script>
 
 In the lambda calculus, given a term $$F$$, how can we find a _fixed point_ for $$F$$---that is, a term $$X$$ such that $$FX=X$$? Well, if infinite terms were allowed, we could just take
 
