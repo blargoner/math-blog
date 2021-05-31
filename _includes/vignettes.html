@@ -1,0 +1,6 @@
+{% assign vignettes = site.vignettes | sort: "ordinal" %}
+{% for v in vignettes %}
+  <h2>
+    <a href="{{ v.url }}">{{ v.title }}</a>
+  </h2>
+{% endfor %}
